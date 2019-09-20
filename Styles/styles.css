@@ -1,0 +1,44 @@
+body {
+	overflow: hidden;
+	align-content: center;
+	background: linear-gradient(0deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA);
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	display: inline-block;
+	margin: 20% 7%;
+	box-shadow: 3px 3px 5px #ddd;
+	transition: all 0.3s ease-in-out;
+}
+
+div:hover {
+	box-shadow: 5px 5px 9px grey;
+	transform: translate(-5px, -5px);
+}
+
+.pattern1 {
+	background-image: linear-gradient(135deg, #3A1C71, #D76D77, #FFAF7B);
+	background-size: 200%;
+}
+
+.pattern2 {
+	background-image: linear-gradient(135deg, #000000, #EB5757);
+	background-size: 200%;
+}
+
+.pattern3 {
+	background-image: linear-gradient(135deg, #155799, #159957);
+	background-size: 200%;
+}
+
+.pattern4 {
+	background-image: linear-gradient(135deg, #FF8235, #30E8BF);
+	background-size: 200%;
+}
+
+.pattern1:hover, .pattern2:hover, .pattern3:hover, .pattern4:hover {
+	background-position: right;
+}

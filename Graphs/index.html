@@ -1,0 +1,68 @@
+<html>
+<head>
+  	<meta charset="UTF-8">
+  	<script src="sketch.js"></script>
+	<!--script src="plotly.js"></script-->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+</head>
+
+<style>
+	body {
+		overflow: hidden;
+	}
+	#graph {
+		width: 80%;
+		height: 100%;
+		border: 1px solid rgb(221, 221, 221);
+		border-radius: 5px;
+		float: left;
+		box-shadow: 3px 3px 5px rgb(136, 136, 136);
+	}
+	#msg {
+		width: 100%;
+		font-size: 64;
+		font-family: "Times New Roman";
+		text-align: center;
+		padding: 30% 0;
+	}
+	#settings {
+		width: 19%;
+		height: 100%;
+		border: 1px solid rgb(221, 221, 221);
+		border-radius: 5px;
+		display: inline-block;
+		float: right;
+		box-shadow: 3px 3px 5px rgb(136, 136, 136);
+	}
+	#title {
+		width: 100%;
+		font-size: 32;
+		font-family: "Times New Roman";
+		text-align: center;
+	}
+	#options {
+		padding-left: 10%;
+		line-height: 30px;
+	}
+</style>
+
+<body>
+	<div id="graph">
+		<p id="msg">Select a graph to view it!</p>
+	</div>
+	<div id="settings">
+		<p id="title">Settings</p>
+		<form id="options" action="">
+			<input type="radio" name="graphtype" value="flystraight"> Fly Straight, Dammit!<br>
+			<input type="radio" name="graphtype" value="wisteria"> Wisteria<br>
+			<input type="radio" name="graphtype" value="recaman"> Recamán<br>
+			<input type="radio" name="graphtype" value="pascal"> Pascal's Triangle<br>
+			<input type="radio" name="graphtype" value="phi"> Phi<br>
+			<input type="radio" name="graphtype" value="stern"> Stern-Brocot<br>
+			<input type="radio" name="graphtype" value="hofstadter"> Hofstadter Q-Sequence<br>
+		</form>
+	</div>
+</body>
+</html>
